@@ -16,7 +16,7 @@ const NavInfo = () => {
   }
 
   return (
-    <div className="flex justify-between h-14 border-b-2 border-neutral-600 lg:px-20 items-center">
+    <div className="flex justify-between h-14 border-b-2 border-neutral-600 lg:px-32 items-center">
       <ul>
         <li>
           <p className="text-neutral-500 font-semibold text-xs">
