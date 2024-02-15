@@ -16,9 +16,9 @@ const NavbarLinks = () => {
         <li>
           <Link
             href="/"
-            className={`text-neutral-400 text-md ${
+            className={`text-md ${
               router === "/"
-                ? "font-semibold text-neutral-200"
+                ? "font-semibold text-neutral-100"
                 : "text-neutral-400 font-normal"
             }`}
           >
@@ -30,7 +30,7 @@ const NavbarLinks = () => {
             href="/about"
             className={`text-md ${
               router === "/about"
-                ? "font-semibold text-neutral-200"
+                ? "font-semibold text-neutral-100"
                 : "text-neutral-400 font-normal"
             }`}
           >
@@ -42,7 +42,7 @@ const NavbarLinks = () => {
             href="/portfolio"
             className={`text-md ${
               router === "/portfolio"
-                ? "font-semibold text-neutral-200"
+                ? "font-semibold text-neutral-100"
                 : "text-neutral-400 font-normal"
             }`}
           >
@@ -54,7 +54,7 @@ const NavbarLinks = () => {
             href="blog"
             className={`text-md ${
               router === "/blog"
-                ? "font-semibold text-neutral-200"
+                ? "font-semibold text-neutral-100"
                 : "text-neutral-400 font-normal"
             }`}
           >
@@ -66,7 +66,7 @@ const NavbarLinks = () => {
             href="/contact"
             className={`text-md ${
               router === "/contact"
-                ? "font-semibold text-neutral-200"
+                ? "font-semibold text-neutral-100"
                 : "text-neutral-400 font-normal"
             }`}
           >

@@ -20,7 +20,7 @@ const NavInfo = () => {
       <ul>
         <li>
           <p className="text-neutral-500 font-semibold text-xs">
-            Created by &copy; Wahyudi Umar
+            Created by &copy; Jumaing Dalton
           </p>
         </li>
       </ul>
@@ -47,7 +47,7 @@ const NavInfo = () => {
           >
             <EnvelopeIcons className="w-3.5 h-3.5 fill-neutral-500" />
             <span className="text-xs text-neutral-500 font-semibold">
-              wahyucherryorlove@gmail.com
+              jumaing.bebz@gmail.com
             </span>
           </Link>
         </li>
