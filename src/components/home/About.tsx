@@ -5,7 +5,7 @@ import ProfileImage from "@images/about/profile.jpg";
 
 export const About = () => {
   const bio =
-    "I am a Frontend developer based in Makassar, Indonesia. I am an alumnus of SMKS Mutiara Ilmu majoring in Software Engineering, and my journey in web development began when I was in class XI at vocational school level. I'm passionate about creating beautiful, functional, and user-friendly websites and apps, and I'm constantly pushing myself to learn and grow as a developer.";
+    "I am a Frontend developer based in Makassar, Indonesia. I am an alumnus of SMKS Mutiara Ilmu majoring in Software Engineering, and my journey in web development began when I was in class XI at vocational school level. I am passionate about creating beautiful, functional, and user-friendly websites and apps, and I am constantly pushing myself to learn and grow as a developer.";
 
   return (
     <section className="grid xl:grid-cols-3 lg:px-32 lg:flex-row py-[6rem] items-start">
