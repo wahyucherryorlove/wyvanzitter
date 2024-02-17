@@ -5,15 +5,15 @@ import { blogTemp } from "@components/temp/blog";
 
 export function Blog() {
   return (
-    <section className="lg:px-32 lg:py-[8rem]">
+    <section className="px-4 lg:px-32 py-[6rem] lg:py-[8rem]">
       <h6 className="text-md text-center text-[#40A2D8] font-bold mb-2">
         Blog
       </h6>
-      <h2 className="text-4xl text-center font-semibold text-neutral-200">
+      <h2 className="text-3xl lg:text-4xl text-center font-semibold text-neutral-200">
         Latest posts from our blog
       </h2>
 
-      <div className="grid lg:grid-cols-3 gap-x-6 gap-y-10 lg:mt-14">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-10 mt-14">
         {blogTemp.map(({ id, title, text, images, times }) => (
           <figure className="w-full" key={id}>
             <div className="relative w-full h-[280px] rounded-sm">

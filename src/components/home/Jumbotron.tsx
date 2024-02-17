@@ -4,11 +4,13 @@ import ProfileImages from "@images/thumbnail/home.svg";
 
 export function Jumbotron() {
   return (
-    <section className="lg:px-32 py-[6rem] bg-neutral-700 grid lg:grid-cols-2 items-center">
+    <section className="px-4 lg:px-32 pt-[4rem] pb-[6rem] bg-neutral-700 grid lg:grid-cols-2 items-center">
       <div className="flex flex-col">
         <div className="flex gap-y-4 flex-col">
           <h5 className={`text-lg font-bold text-[#3887BE]`}>WELCOME 👋</h5>
-          <h2 className={`text-neutral-100 text-5xl font-semibold `}>
+          <h2
+            className={`text-neutral-100 text-4xl lg:text-5xl font-semibold `}
+          >
             I&apos;m Wahyudi Umar
           </h2>
           <span className={`text-lg font-normal text-neutral-300`}>
@@ -26,7 +28,7 @@ export function Jumbotron() {
         </div>
       </div>
 
-      <div>
+      <div className="mt-20 lg:mt-0">
         <ProfileImages className="w-full h-full object-contain" />
       </div>
     </section>

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="mt-[8rem]">
+    <main className="mt-[5rem] lg:mt-[8rem]">
       <Jumbotron />
 
       <About />

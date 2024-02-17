@@ -4,7 +4,7 @@ import { portfolioTemp } from "@components/temp/portfolio";
 
 export function Portfolio() {
   return (
-    <section className="lg:px-32 lg:py-[8rem] bg-[#393E46]">
+    <section className="px-4 lg:px-32 py-[6rem] lg:py-[8rem] bg-[#393E46]">
       <h6 className="text-md text-center text-[#40A2D8] font-bold mb-2">
         Portfolio
       </h6>
@@ -12,7 +12,7 @@ export function Portfolio() {
         Latest Project
       </h2>
 
-      <figure className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 lg:mt-14">
+      <figure className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 mt-14">
         {portfolioTemp.map(({ id, title, images }) => (
           <div className="relative w-full h-[200px]" key={id}>
             <Image
