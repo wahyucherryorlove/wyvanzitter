@@ -3,6 +3,7 @@ import { Inter, Poppins } from "next/font/google";
 import "../styles/globals.css";
 
 import { NavbarDesktop } from "@components/navigasi/NavbarDesktop";
+import { Footer } from "@components/navigasi/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -20,6 +21,8 @@ export default function RootLayout({
       <body className={`${poppins.className} bg-[#2C3333]`}>
         <NavbarDesktop />
         {children}
+
+        <Footer />
       </body>
     </html>
   );

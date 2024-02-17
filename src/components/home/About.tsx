@@ -17,9 +17,9 @@ export const About = () => {
           fill={false}
         />
 
-        <h5 className="text-center mt-2 text-neutral-300">
+        <span className="w-full flex justify-center mt-2 text-neutral-300">
           {"< I build stuff 🚀/>"}
-        </h5>
+        </span>
       </div>
 
       <div className="mt-10 col-span-2">

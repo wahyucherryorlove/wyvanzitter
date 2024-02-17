@@ -12,7 +12,7 @@ export function Jumbotron() {
             I'm Wahyudi Umar
           </h2>
           <span className={`text-lg font-normal text-neutral-300`}>
-            I am into Frontend Developer
+            I&apos;am into Frontend Developer
           </span>
         </div>
         <div className="flex gap-x-6">

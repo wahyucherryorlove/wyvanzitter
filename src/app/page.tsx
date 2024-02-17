@@ -4,7 +4,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 import { About } from "@components/home/About";
+import { Blog } from "@components/home/Blog";
 import { Jumbotron } from "@components/home/Jumbotron";
+import { Portfolio } from "@components/home/Portfolio";
 
 export const metadata: Metadata = {
   title: "Portfolio Wahyudi Umar",
@@ -12,22 +14,16 @@ export const metadata: Metadata = {
     "Wahyudi Umar's portfolio website was created using nextjs 14 and tailwindcss",
 };
 
-const roboto_mono = Roboto_Mono({
-  weight: "400",
-  subsets: ["latin"],
-});
-
-const karla = Karla({
-  weight: "400",
-  subsets: ["latin"],
-});
-
 export default function Home() {
   return (
-    <main className="mt-[8rem] mb-40">
+    <main className="mt-[8rem]">
       <Jumbotron />
 
       <About />
+
+      <Portfolio />
+
+      <Blog />
     </main>
   );
 }
