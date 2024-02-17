@@ -9,7 +9,7 @@ export function Jumbotron() {
         <div className="flex gap-y-4 flex-col">
           <h5 className={`text-lg font-bold text-[#3887BE]`}>WELCOME 👋</h5>
           <h2 className={`text-neutral-100 text-5xl font-semibold `}>
-            I'm Wahyudi Umar
+            I&apos;m Wahyudi Umar
           </h2>
           <span className={`text-lg font-normal text-neutral-300`}>
             I&apos;m into Frontend Developer
