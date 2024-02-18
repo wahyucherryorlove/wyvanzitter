@@ -32,7 +32,7 @@ export function Blog() {
               <p className="text-neutral-400 mt-2 text-sm ">
                 {text.length > 170 ? text.slice(0, 170) + "..." : text}
               </p>
-              <h6 className="mt-7 text-sm font-semibold text-neutral-400">
+              <h6 className="mt-7 text-xs font-semibold text-neutral-400">
                 {times.days}, {times.dates}
               </h6>
             </div>
