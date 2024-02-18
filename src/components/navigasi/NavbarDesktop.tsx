@@ -41,9 +41,11 @@ const NavbarDesktop = () => {
         </li>
         <li>
           <Link
-            href="/about"
+            href="/about/frontend"
             className={`text-md ${
-              router === "/about"
+              router === "/about/frontend" ||
+              router === "/about/backend" ||
+              router === "/about/database"
                 ? "font-semibold text-neutral-100"
                 : "text-neutral-400 font-normal"
             }`}

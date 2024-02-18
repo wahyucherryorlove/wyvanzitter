@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="py-7 bg-[#272829]">
+    <footer className="relative bottom-0 py-7 bg-[#272829]">
       <p className="text-center text-neutral-400 text-sm">
         Copyright &copy;{new Date().getFullYear()}{" "}
         <Link
