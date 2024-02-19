@@ -61,9 +61,12 @@ export function Skill({ params }: { params: { view: string } }) {
       <div className="mt-20 lg:w-3/6">
         <div className="flex items-center justify-center gap-x-10 gap-y-12 flex-wrap">
           {params.view === "frontend" &&
-            frontend.map(({ images, alt }) => {
+            frontend.map(({ images, alt }, index) => {
               return (
-                <figure className="flex flex-col justify-center gap-y-8  items-center relative">
+                <figure
+                  className="flex flex-col justify-center gap-y-8  items-center relative"
+                  key={index + 1}
+                >
                   <div className="relative w-[50px] h-[50px] flex items-center justify-center">
                     <Image
                       src={images}
