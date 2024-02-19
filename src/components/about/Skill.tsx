@@ -58,10 +58,10 @@ export function Skill({ params }: { params: { view: string } }) {
         </li>
       </ul>
 
-      <div className="mt-20 lg:w-3/6">
-        <div className="flex items-center justify-center gap-x-10 gap-y-12 flex-wrap">
+      <div className="mt-20">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-x-12 gap-y-12">
           {params.view === "frontend" &&
-            frontend.map(({ images, alt }, index) => {
+            frontend.map(({ images, title }, index) => {
               return (
                 <figure
                   className="flex flex-col justify-center gap-y-8  items-center relative"
@@ -70,13 +70,13 @@ export function Skill({ params }: { params: { view: string } }) {
                   <div className="relative w-[50px] h-[50px] flex items-center justify-center">
                     <Image
                       src={images}
-                      alt={alt}
+                      alt={title}
                       className="w-full h-full object-contain z-10"
                       fill
                     />
                     <div
                       className={`absolute w-[90px] h-[90px] z-0 rounded-full ${
-                        alt === "Nextjs"
+                        title === "Nextjs"
                           ? "bg-neutral-50/80"
                           : "bg-[#45474B]/80"
                       }`}
@@ -84,7 +84,7 @@ export function Skill({ params }: { params: { view: string } }) {
                   </div>
 
                   <figcaption className="font-normal text-neutral-300">
-                    Javascript
+                    {title}
                   </figcaption>
                 </figure>
               );
