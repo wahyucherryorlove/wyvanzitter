@@ -21,7 +21,8 @@
       "@pages/*": ["./src/app/*"],
       "@components/*": ["./src/components/*"],
       "@hooks/*": ["./src/hooks/*"],
-      "@temp/*": ["./src/temp/*"],
+      "@interfaces/*": ["./src/components/interfaces/*"],
+      "@temps/*": ["./src/components/temp/*"],
       "@images/*": ["./public/images/*"],
       "@icons/*": ["./public/icons/*"]
     }

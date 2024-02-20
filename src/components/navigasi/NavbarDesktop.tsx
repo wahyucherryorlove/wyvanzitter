@@ -55,9 +55,10 @@ const NavbarDesktop = () => {
         </li>
         <li>
           <Link
-            href="/portfolio"
+            href="/portfolio/lamp-stack"
             className={`text-md ${
-              router === "/portfolio"
+              router === "/portfolio/lamp-stack" ||
+              router === "/portfolio/basic-web"
                 ? "font-semibold text-neutral-100"
                 : "text-neutral-400 font-normal"
             }`}
