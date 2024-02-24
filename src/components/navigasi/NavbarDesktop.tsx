@@ -68,7 +68,7 @@ const NavbarDesktop = () => {
         </li>
         <li>
           <Link
-            href="blog"
+            href="/blog"
             className={`text-md ${
               router === "/blog"
                 ? "font-semibold text-neutral-100"
