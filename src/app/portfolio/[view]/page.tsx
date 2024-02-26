@@ -16,7 +16,7 @@ export default function Page({ params }: { params: { view: string } }) {
   return (
     <main className="mt-[5rem] lg:mt-[80px]">
       <section className="px-4 lg:px-32 h-[17rem] flex justify-center items-center bg-[url('/images/portfolio/jumbotron.jpg')] bg-cover bg-fixed bg-center">
-        <h2 className="text-4xl font-bold text-neutral-50">Portfolio</h2>
+        <h2 className="text-4xl font-bold text-neutral-50">PORTFOLIO</h2>
       </section>
 
       <section className="flex flex-col items-center px-4 lg:px-32 my-20">
