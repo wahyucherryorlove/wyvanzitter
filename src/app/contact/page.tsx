@@ -16,7 +16,7 @@ export default function Home() {
     <main className="mt-[5rem] lg:mt-[80px] pb-[6rem]">
       <section className="px-4 lg:px-32 h-[17rem] flex flex-col justify-center items-center bg-[url('/images/contact/jumbotron.jpg')] bg-cover bg-center">
         <h2 className="text-3xl lg:text-4xl text-center font-semibold text-neutral-50">
-          BLOG
+          Contact
         </h2>
       </section>
 
