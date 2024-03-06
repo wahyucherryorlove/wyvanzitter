@@ -1,9 +1,10 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
+import { BasicWeb } from "@components/portfolio/BasicWeb";
 import { LampStack } from "@components/portfolio/LampStack";
 
-import { lampStack } from "@temps/project/lampStack";
+import { portfolioTemp } from "@components/temp/portfolio";
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -13,6 +14,8 @@ export const metadata: Metadata = {
 };
 
 export default function Page({ params }: { params: { view: string } }) {
+  const tes = 1;
+
   return (
     <main className="mt-[5rem] lg:mt-[80px]">
       <section className="px-4 lg:px-32 h-[17rem] flex justify-center items-center bg-[url('/images/portfolio/jumbotron.jpg')] bg-cover bg-fixed bg-center">
@@ -20,11 +23,11 @@ export default function Page({ params }: { params: { view: string } }) {
       </section>
 
       <section className="flex flex-col items-center px-4 lg:px-32 my-20">
-        <ul className="grid grid-cols-2 lg:flex gap-x-6 mt-10">
+        <ul className="grid grid-cols-2 lg:flex gap-x-6 mt-10 px-2 rounded-md py-5 bg-neutral-700">
           <li>
             <Link
               href="/portfolio/lamp-stack"
-              className={`text-neutral-50 text-sm sm:text-md px-3 py-2 md:px-5 md:py-2 ${
+              className={`text-neutral-50 text-sm px-6 py-3 ${
                 params.view === "lamp-stack"
                   ? "bg-[#59B4C3] rounded-md font-bold"
                   : "bg-transparent font-normal"
@@ -37,7 +40,7 @@ export default function Page({ params }: { params: { view: string } }) {
           <li>
             <Link
               href="/portfolio/basic-web"
-              className={`text-neutral-50 text-sm sm:text-md px-3 py-2 md:px-5 md:py-2 ${
+              className={`text-neutral-50 text-sm px-6 py-3 ${
                 params.view === "basic-web"
                   ? "bg-[#59B4C3] rounded-md font-bold"
                   : "bg-transparent font-normal"
@@ -49,21 +52,38 @@ export default function Page({ params }: { params: { view: string } }) {
           </li>
         </ul>
 
-        <div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-10 mt-14">
-            {params.view === "lamp-stack" &&
-              lampStack.map(({ images, title, information }, index) => {
-                return (
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-10 mt-14">
+          {params.view === "lamp-stack" &&
+            portfolioTemp.map(
+              ({ id, title, images, teachStack, group, medsos }, index) =>
+                group === "lamp-stack" && (
                   <LampStack
-                    key={index}
+                    key={`${id}${index}`}
                     index={index}
                     images={images}
                     title={title}
-                    information={information}
+                    information={teachStack}
+                    github={medsos.github}
+                    showProject={medsos.showProject}
                   />
-                );
-              })}
-          </div>
+                )
+            )}
+
+          {params.view === "basic-web" &&
+            portfolioTemp.map(
+              ({ id, title, images, teachStack, group, medsos }, index) =>
+                group === "basic-web" && (
+                  <BasicWeb
+                    key={`${id}${index}`}
+                    index={index}
+                    images={images}
+                    title={title}
+                    information={teachStack}
+                    github={medsos.github}
+                    showProject={medsos.showProject}
+                  />
+                )
+            )}
         </div>
       </section>
     </main>

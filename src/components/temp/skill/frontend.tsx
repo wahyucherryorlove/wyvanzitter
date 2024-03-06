@@ -1,30 +1,38 @@
 export const frontend = [
   {
-    images: "/images/skill/frontend/html.png",
+    images: "/images/skill/html.png",
     title: "HTML5",
   },
   {
-    images: "/images/skill/frontend/css.png",
+    images: "/images/skill/css.png",
     title: "CSS3",
   },
   {
-    images: "/images/skill/frontend/tailwind.png",
+    images: "/images/skill/tailwind.png",
     title: "TailwindCSS",
   },
   {
-    images: "/images/skill/frontend/nextjs.png",
+    images: "/images/skill/nextjs.png",
     title: "Nextjs",
   },
   {
-    images: "/images/skill/frontend/bootstrap.png",
+    images: "/images/skill/bootstrap.png",
     title: "Bootstrap",
   },
   {
-    images: "/images/skill/frontend/sass.png",
+    images: "/images/skill/sass.png",
     title: "Sass",
   },
   {
-    images: "/images/skill/frontend/javascript.png",
+    images: "/images/skill/javascript.png",
     title: "Javascript",
+  },
+  {
+    images: "/images/skill/php.png",
+    title: "PHP",
+  },
+  {
+    images: "/images/skill/mysql.png",
+    title: "MySQL",
   },
 ];

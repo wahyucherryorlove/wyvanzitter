@@ -3,6 +3,8 @@ interface LampStackInterface {
   title: string;
   information: string;
   images: string;
+  github: string;
+  showProject: string;
 }
 
 interface BasicWebInterface {
@@ -10,6 +12,8 @@ interface BasicWebInterface {
   title: string;
   information: string;
   images: string;
+  github: string;
+  showProject: string;
 }
 
 export type { BasicWebInterface, LampStackInterface };

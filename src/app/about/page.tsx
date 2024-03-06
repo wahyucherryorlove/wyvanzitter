@@ -11,14 +11,14 @@ export const metadata: Metadata = {
   icons: "/images/logo-shape.png",
 };
 
-export default function Page({ params }: { params: { view: string } }) {
+export default function Page() {
   return (
     <main className="mt-[5rem] lg:mt-[80px]">
       <Jumbotron />
 
       <About />
 
-      <Skill params={params} />
+      <Skill />
     </main>
   );
 }

@@ -16,6 +16,11 @@ export function Jumbotron() {
           <span className={`text-lg font-normal text-neutral-300`}>
             I&apos;m into Frontend Developer
           </span>
+          <p className="text-neutral-300 xl:w-4/5">
+            I focus on developing user-friendly web applications that meet the
+            client's requirements, with attention to detail, scalability, and
+            performance.
+          </p>
         </div>
         <div className="flex gap-x-6">
           <Link
