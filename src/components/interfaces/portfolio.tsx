@@ -1,4 +1,4 @@
-interface LampStackInterface {
+interface PortfolioProps {
   index: number;
   title: string;
   information: string;
@@ -7,13 +7,4 @@ interface LampStackInterface {
   showProject: string;
 }
 
-interface BasicWebInterface {
-  index: number;
-  title: string;
-  information: string;
-  images: string;
-  github: string;
-  showProject: string;
-}
-
-export type { BasicWebInterface, LampStackInterface };
+export type { PortfolioProps };

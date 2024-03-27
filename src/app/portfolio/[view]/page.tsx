@@ -1,8 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
-import { BasicWeb } from "@components/portfolio/BasicWeb";
-import { LampStack } from "@components/portfolio/LampStack";
+import { Portfolio } from "@components/Portfolio";
 
 import { portfolioTemp } from "@components/temp/portfolio";
 
@@ -14,11 +13,11 @@ export const metadata: Metadata = {
 };
 
 export default function Page({ params }: { params: { view: string } }) {
-  const tes = 1;
+  let testing = portfolioTemp.filter((tes) => tes.group === "lamp-stack");
 
   return (
     <main className="mt-[5rem] lg:mt-[80px]">
-      <section className="px-4 lg:px-32 h-[17rem] flex justify-center items-center bg-[url('/images/portfolio/jumbotron.jpg')] bg-cover bg-fixed bg-center">
+      <section className="px-4 lg:px-32 h-[17rem] flex justify-center items-center bg-neutral-700">
         <h2 className="text-4xl font-bold text-neutral-50">PORTFOLIO</h2>
       </section>
 
@@ -26,15 +25,15 @@ export default function Page({ params }: { params: { view: string } }) {
         <ul className="grid grid-cols-2 lg:flex gap-x-6 mt-10 px-2 rounded-md py-5 bg-neutral-700">
           <li>
             <Link
-              href="/portfolio/lamp-stack"
+              href="/portfolio/wamp-stack"
               className={`text-neutral-50 text-sm px-6 py-3 ${
-                params.view === "lamp-stack"
+                params.view === "wamp-stack"
                   ? "bg-[#59B4C3] rounded-md font-bold"
                   : "bg-transparent font-normal"
               }`}
               scroll={false}
             >
-              LAMP Stack
+              WAMP Stack
             </Link>
           </li>
           <li>
@@ -53,37 +52,35 @@ export default function Page({ params }: { params: { view: string } }) {
         </ul>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-10 mt-14">
-          {params.view === "lamp-stack" &&
-            portfolioTemp.map(
-              ({ id, title, images, teachStack, group, medsos }, index) =>
-                group === "lamp-stack" && (
-                  <LampStack
-                    key={`${id}${index}`}
-                    index={index}
-                    images={images}
-                    title={title}
-                    information={teachStack}
-                    github={medsos.github}
-                    showProject={medsos.showProject}
-                  />
-                )
-            )}
+          {params.view === "wamp-stack" &&
+            portfolioTemp
+              .filter((item) => item.group === "wamp-stack")
+              .map((item) => (
+                <Portfolio
+                  key={item.id}
+                  index={item.id}
+                  images={item.images}
+                  title={item.title}
+                  information={item.teachStack}
+                  github={item.medsos.github}
+                  showProject={item.medsos.showProject}
+                />
+              ))}
 
           {params.view === "basic-web" &&
-            portfolioTemp.map(
-              ({ id, title, images, teachStack, group, medsos }, index) =>
-                group === "basic-web" && (
-                  <BasicWeb
-                    key={`${id}${index}`}
-                    index={index}
-                    images={images}
-                    title={title}
-                    information={teachStack}
-                    github={medsos.github}
-                    showProject={medsos.showProject}
-                  />
-                )
-            )}
+            portfolioTemp
+              .filter((item) => item.group === "basic-web")
+              .map((item) => (
+                <Portfolio
+                  key={item.id}
+                  index={item.id}
+                  images={item.images}
+                  title={item.title}
+                  information={item.teachStack}
+                  github={item.medsos.github}
+                  showProject={item.medsos.showProject}
+                />
+              ))}
         </div>
       </section>
     </main>

@@ -35,6 +35,7 @@ const NavbarDesktop = () => {
                 ? "font-semibold text-neutral-100"
                 : "text-neutral-400 font-normal"
             }`}
+            onClick={open}
           >
             Home
           </Link>
@@ -47,19 +48,21 @@ const NavbarDesktop = () => {
                 ? "font-semibold text-neutral-100"
                 : "text-neutral-400 font-normal"
             }`}
+            onClick={open}
           >
             About
           </Link>
         </li>
         <li>
           <Link
-            href="/portfolio/lamp-stack"
+            href="/portfolio/wamp-stack"
             className={`text-md ${
-              router === "/portfolio/lamp-stack" ||
+              router === "/portfolio/wamp-stack" ||
               router === "/portfolio/basic-web"
                 ? "font-semibold text-neutral-100"
                 : "text-neutral-400 font-normal"
             }`}
+            onClick={open}
           >
             Portfolio
           </Link>
@@ -72,6 +75,7 @@ const NavbarDesktop = () => {
                 ? "font-semibold text-neutral-100"
                 : "text-neutral-400 font-normal"
             }`}
+            onClick={open}
           >
             Blog
           </Link>
@@ -84,6 +88,7 @@ const NavbarDesktop = () => {
                 ? "font-semibold text-neutral-100"
                 : "text-neutral-400 font-normal"
             }`}
+            onClick={open}
           >
             Contact
           </Link>

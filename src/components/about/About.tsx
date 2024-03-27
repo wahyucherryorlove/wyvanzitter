@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import ProfileImage from "@images/about/jumaing.jpg";
+import ProfileImage from "@images/about/wahyu.jpg";
 
 export const About = () => {
   const bio =

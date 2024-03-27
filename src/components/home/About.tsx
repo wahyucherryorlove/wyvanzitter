@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import ProfileImage from "@images/about/jumaing.jpg";
+import ProfileImage from "@images/about/wahyu.jpg";
 
 export const About = () => {
   const bio =
@@ -23,7 +23,7 @@ export const About = () => {
       </div>
 
       <div className="mt-10 col-span-2">
-        <h2 className="text-3xl font-bold text-neutral-100">Jumaing Dalton</h2>
+        <h2 className="text-3xl font-bold text-neutral-100">Wahyudi Umar</h2>
         <h6 className="my-4 lg:mt-4 lg:mb-8 ring-2 ring-[#00A9FF]/50 inline-block px-2 py-1 text-xs rounded-md text-[#00A9FF]">
           Front End Developer
         </h6>

@@ -24,7 +24,7 @@ export function Jumbotron() {
         </div>
         <div className="flex gap-x-6">
           <Link
-            href="#"
+            href="/about"
             rel="noreferrer"
             className="text-neutral-50 mt-8 inline-block bg-[#00A9FF] hover:bg-[#3876BF] duration-100 px-5 py-3 text-sm font-semibold rounded-md"
           >

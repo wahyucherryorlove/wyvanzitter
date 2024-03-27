@@ -4,16 +4,16 @@ import Link from "next/link";
 import GithubIcons from "@icons/github.svg";
 import OpenLinkIcons from "@icons/open-link.svg";
 
-import type { BasicWebInterface } from "@interfaces/portfolio";
+import type { PortfolioProps } from "@interfaces/portfolio";
 
-export function BasicWeb({
+export function Portfolio({
   index = 0,
   title,
   information,
   images,
   github,
   showProject,
-}: BasicWebInterface) {
+}: PortfolioProps) {
   return (
     <figure className="w-full bg-[#293030] p-4 rounded-md" key={index}>
       <div className="relative h-[280px] rounded-sm">
